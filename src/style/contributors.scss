@@ -1,0 +1,54 @@
+@import "./vars/colors";
+@import "./vars/vars";
+@import "./mixins/typography";
+@import "./lib/base";
+@import "./lib/buttons";
+
+/*
+contributors block at the bottom of the article
+********************************************************************** */
+.contributors-sub {
+  color: $grey;
+  padding: 4px 0;
+  @include set-smaller-font-size();
+
+  /* community icon size for contributors section */
+  .icon-group {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+  }
+
+  h4 {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .button {
+    margin-left: 10px;
+  }
+
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+
+    li {
+      display: inherit;
+    }
+
+    a {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media print {
+  .contributors {
+    display: none;
+  }
+}

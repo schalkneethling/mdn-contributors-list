@@ -1,0 +1,40 @@
+/*
+    buttons
+*/
+
+.button,
+button,
+input[type="submit"],
+input[type="button"] {
+  display: inline-block;
+  background-color: $form-background-color;
+  color: $form-text;
+  padding: 5px 11px;
+  border: $form-border-width solid $form-border-color;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+
+  &.neutral {
+    border-color: $blue;
+    color: $blue-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: #fff;
+  }
+}
+
+/* only need these styles on links with class button added */
+.button {
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
