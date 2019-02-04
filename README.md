@@ -24,4 +24,8 @@ This made me wonder whether we could make this a use case for code splitting/laz
 ]
 ```
 
-On the initial load of a page, we can then simple have the following displayed.
+On the initial load of a page, we can then simply display the following:
+
+![screenshot of initial load of contributors list](https://duaw26jehqd4r.cloudfront.net/items/400E1s2f2B1D0E333h0m/Screenshot%202019-02-04%20at%2019.00.14.png?X-CloudApp-Visitor-Id=3059136&v=ffe2233c)
+
+TBC
