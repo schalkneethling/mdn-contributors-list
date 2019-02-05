@@ -28,4 +28,6 @@ On the initial load of a page, we can then simply display the following:
 
 ![screenshot of initial load of contributors list](https://duaw26jehqd4r.cloudfront.net/items/400E1s2f2B1D0E333h0m/Screenshot%202019-02-04%20at%2019.00.14.png?X-CloudApp-Visitor-Id=3059136&v=ffe2233c)
 
-TBC
+Only when a user clicks on the button, do we load the data, HTML and JS required to show the full contributors list.
+
+![screenshot of contributors list](https://duaw26jehqd4r.cloudfront.net/items/2o2i0p1R2E3H291W072e/Screenshot%202019-02-05%20at%2015.49.39.png?X-CloudApp-Visitor-Id=3059136&v=00569beb)
