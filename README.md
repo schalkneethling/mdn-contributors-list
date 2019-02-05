@@ -31,3 +31,5 @@ On the initial load of a page, we can then simply display the following:
 Only when a user clicks on the button, do we load the data, HTML and JS required to show the full contributors list.
 
 ![screenshot of contributors list](https://duaw26jehqd4r.cloudfront.net/items/2o2i0p1R2E3H291W072e/Screenshot%202019-02-05%20at%2015.49.39.png?X-CloudApp-Visitor-Id=3059136&v=00569beb)
+
+While in this case it might not add that much benefit, for other more complicated components, we can even ofload the required CSS(using Emotion), until the rest of the component is rendered. This will further improve the initial load.
