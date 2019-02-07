@@ -7,7 +7,8 @@
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
     "dev": "npm run webpack-dev-server -- --env.mode development --hot",
-    "test": "jest"
+    "test": "jest",
+    "flow": "flow"
   },
   "keywords": [
     "react",
@@ -19,6 +20,7 @@
   "author": "Schalk Neethling",
   "license": "MPL-2.0",
   "dependencies": {
+    "flow-bin": "0.92.1",
     "npm": "6.7.0",
     "react": "16.7.0",
     "react-dom": "16.7.0",
@@ -32,10 +34,12 @@
     "@babel/preset-react": "7.0.0",
     "babel-eslint": "10.0.1",
     "babel-loader": "8.0.5",
+    "babel-preset-flow": "6.23.0",
     "css-loader": "2.1.0",
     "eslint": "5.12.1",
     "eslint-config-prettier": "4.0.0",
     "eslint-loader": "2.1.1",
+    "eslint-plugin-flowtype": "3.2.1",
     "eslint-plugin-import": "2.16.0",
     "eslint-plugin-jsx-a11y": "6.2.0",
     "eslint-plugin-prettier": "3.0.1",

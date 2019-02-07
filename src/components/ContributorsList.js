@@ -1,6 +1,8 @@
+// @flow
+
 import React from "react";
 import Contributor from "./Contributor";
-import Contributors from "./data/contributors.json";
+import Contributors from "../data/contributors.json";
 
 const ContributorsList = () => {
   return (

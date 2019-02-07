@@ -1,6 +1,8 @@
+// @flow
+
 import React from "react";
 
-const ShowContributorsButton = props => {
+const ShowContributorsButton = (props: { showContributors: Function }) => {
   return (
     <button
       id="show-page-contributors"

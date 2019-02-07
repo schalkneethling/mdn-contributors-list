@@ -1,18 +1,27 @@
+// @flow
+
 import React from "react";
 import { render } from "react-dom";
 import Loadable from "react-loadable";
 
-import ContributorsIcon from "./ContributorsIcon";
-import ShowContributorsButton from "./ShowContributorsButton";
+import ContributorsIcon from "./components/ContributorsIcon";
+import ShowContributorsButton from "./components/ShowContributorsButton";
 
+// $FlowFixMe
 import "./style/contributors.scss";
 
+type Props = {};
+type State = {
+  showContributors: boolean,
+  showButton: boolean
+};
+
 const LoadableContributors = Loadable({
-  loader: () => import("./ContributorsList"),
+  loader: () => import("./components/ContributorsList"),
   loading: () => "Loading..."
 });
 
-class App extends React.Component {
+class App extends React.Component<Props, State> {
   constructor(props) {
     super(props);
     this.state = { showContributors: false, showButton: true };
@@ -36,4 +45,7 @@ class App extends React.Component {
   }
 }
 
-render(<App />, document.getElementById("root"));
+const rootElement = document.getElementById("root");
+if (rootElement !== null) {
+  render(<App />, rootElement);
+}
